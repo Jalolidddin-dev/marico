@@ -511,3 +511,33 @@ footer .footer_nav {
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 1600px) {
+  .one_link_mobile img {
+    width: 500px;
+  }
+
+  .one_link_mobile {
+    right: -70px;
+  }
+
+  .showcase_title {
+    font-size: 60px;
+  }
+
+  .showcase_subscribe P {
+    font-size: 30px;
+  }
+
+  .creator_title span {
+    font-size: 50px;
+  }
+  .creator_card .card_title span {
+    font-size: 24px;
+  }
+
+  .creator_card_text {
+    font-size: 18px;
+  }
+}
+
