@@ -7,21 +7,49 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    position: relative;
     justify-content: space-between;
   }
   nav .navbar_logo a {
     display: flex;
+
     align-items: center;
     gap: 16px;
   }
-
-  .navbar_menu {
-    display: flex;
-    gap: 40px;
+  nav .navbar_logo a img {
+    width: 32px;
   }
 
-  .navbar_menu li a {
+  nav .navbar_logo a span {
+    font-size: 22px;
+  }
+
+  .navbar_menu1 {
+    transition: all 0.6s ease;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    background-color: #000000;
+    padding: 30px 0;
+    position: absolute;
+    top: -60px;
+    left: -150%;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+  }
+
+  .navbar_menu1 li a {
+    color: #fff;
     font-size: 18px;
+  }
+
+  .navbar_burger {
+    z-index: 999;
   }
 
   .register {
@@ -32,25 +60,32 @@
 
   .register a {
     font-size: 14px;
-    font-weight: 500;
-    line-height: 30px;
-    transition: all 0.6s ease;
-    padding: 6px 12px;
-    border-radius: 12px;
+    padding: 0;
     border: none;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+  }
+  .register a:hover {
+    background: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    color: rgb(60, 130, 244);
+    font-size: 14px;
   }
 
   .register button {
-    padding: 6px 12px;
+    padding: 6px 10px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 20px;
   }
 
+  .navbar_burger {
+    display: inline-block;
+  }
+
+  .res_menu {
+    left: -50px;
+  }
   .showcase {
     margin-top: 60px;
   }
@@ -303,7 +338,6 @@
   }
 
   .navbar_menu {
-    display: none;
     margin-top: 20px;
   }
 }

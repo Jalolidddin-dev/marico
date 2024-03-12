@@ -75,7 +75,9 @@ nav .navbar_logo a span {
   border-radius: 12px;
   border: 1px solid rgb(48, 110, 247);
 }
-
+.navbar_burger {
+  display: none;
+}
 .register a:hover {
   background: rgb(48, 110, 247);
   padding: 12px 22px;
@@ -540,4 +542,3 @@ footer .footer_nav {
     font-size: 18px;
   }
 }
-
